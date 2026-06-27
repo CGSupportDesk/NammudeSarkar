@@ -612,3 +612,1064 @@ h1 strong {
   .logo { font-size: 21px; }
   .logo-mark { width: 38px; height: 38px; }
 }
+
+/* Malayalam civic portal homepage */
+body {
+  background: #ffffff;
+  font-family: "Noto Sans Malayalam", Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.nav {
+  border: 1px solid rgba(7, 46, 99, .28);
+  border-bottom-color: rgba(7, 46, 99, .16);
+  border-radius: 0 0 13px 13px;
+  background: rgba(255, 255, 255, .94);
+  box-shadow: 0 14px 35px rgba(7, 46, 99, .06);
+}
+
+.nav-inner {
+  height: 90px;
+}
+
+.logo {
+  gap: 11px;
+  letter-spacing: 0;
+  color: #07346f;
+  min-width: 224px;
+}
+
+.site-logo-img {
+  display: block;
+  width: 214px;
+  height: auto;
+}
+
+.logo-mark {
+  width: 62px;
+  height: 62px;
+  border-radius: 0;
+  background: transparent;
+  color: #07346f;
+  box-shadow: none;
+}
+
+.logo-mark svg {
+  width: 100%;
+  height: 100%;
+}
+
+.logo-mark path {
+  stroke: currentColor;
+  stroke-width: 2.4;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+}
+
+.logo-mark path:first-child,
+.logo-mark path:nth-child(2) {
+  stroke: #138a4b;
+}
+
+.logo-mark path:last-child {
+  stroke: #d39118;
+}
+
+.logo-text {
+  display: grid;
+  gap: 0;
+  color: #07346f !important;
+  font-size: 23px;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.logo-text strong {
+  display: block;
+  color: #07346f;
+  font-size: 30px;
+  letter-spacing: 0;
+}
+
+.logo-text small {
+  color: #365178;
+  font-family: Inter, sans-serif;
+  font-size: 8px;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.nav-links {
+  gap: 34px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #293c5c;
+}
+
+.nav-links a:first-child {
+  position: relative;
+  color: #07346f;
+}
+
+.nav-links a:first-child::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -22px;
+  width: 42px;
+  height: 3px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: #d39118;
+}
+
+.nav-links a:first-child::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: -28px;
+  width: 8px;
+  height: 8px;
+  border-radius: 999px;
+  transform: translateX(-50%);
+  background: #d39118;
+}
+
+.nav-tools {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.lang-pill {
+  display: grid;
+  min-width: 34px;
+  height: 34px;
+  place-items: center;
+  border-radius: 999px;
+  color: #43546d;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.lang-pill.active {
+  color: #fff;
+  background: #07346f;
+}
+
+.nav-search {
+  display: grid;
+  width: 38px;
+  height: 38px;
+  place-items: center;
+  color: #0f213c;
+}
+
+.nav-search svg {
+  width: 22px;
+  height: 22px;
+}
+
+.nav-search path {
+  stroke: currentColor;
+  stroke-width: 2;
+  stroke-linecap: round;
+  fill: none;
+}
+
+.home-page {
+  overflow: hidden;
+  color: #10233f;
+}
+
+.portal-hero {
+  position: relative;
+  min-height: 460px;
+  padding: 70px 0 94px;
+  overflow: hidden;
+  background:
+    linear-gradient(180deg, rgba(233, 245, 252, .85), rgba(255, 255, 255, .96) 82%),
+    linear-gradient(90deg, rgba(255, 255, 255, .92) 0%, rgba(255, 255, 255, .74) 48%, rgba(232, 243, 249, .92) 100%);
+}
+
+.portal-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(90deg, rgba(255,255,255,.98) 0%, rgba(255,255,255,.9) 42%, rgba(255,255,255,.48) 76%),
+    url("/assets/udf-kerala-homepage-hero-concept.png");
+  background-size: cover;
+  background-position: center;
+  opacity: .34;
+  pointer-events: none;
+}
+
+.portal-hero::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 120px;
+  background:
+    linear-gradient(180deg, transparent, #fff 78%),
+    repeating-linear-gradient(0deg, rgba(7, 46, 99, .1) 0 1px, transparent 1px 18px);
+  opacity: .82;
+  pointer-events: none;
+}
+
+.kerala-map-mark {
+  position: absolute;
+  left: 43%;
+  top: 45px;
+  width: 84px;
+  height: 244px;
+  border: 2px solid rgba(33, 92, 145, .18);
+  border-radius: 56% 44% 58% 42% / 22% 72% 28% 78%;
+  transform: rotate(-15deg);
+  opacity: .78;
+}
+
+.portal-hero-grid {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1.08fr .92fr;
+  gap: 38px;
+  align-items: center;
+}
+
+.portal-hero-copy {
+  padding-top: 12px;
+}
+
+.portal-kicker {
+  margin-bottom: 18px;
+  color: #07346f;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.portal-hero h1 {
+  margin: 0;
+  color: #07346f;
+  font-size: 62px;
+  line-height: 1.12;
+  letter-spacing: 0;
+  font-weight: 800;
+  max-width: 650px;
+}
+
+.portal-hero h1 span {
+  display: block;
+  color: #137a3f;
+}
+
+.portal-lead {
+  max-width: 660px;
+  margin: 20px 0 0;
+  color: #44536d;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.9;
+}
+
+.portal-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.portal-btn {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid transparent;
+  border-radius: 9px;
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0;
+  box-shadow: 0 10px 24px rgba(7, 46, 99, .13);
+}
+
+.portal-btn svg {
+  width: 22px;
+  height: 22px;
+}
+
+.portal-btn.primary {
+  color: #fff;
+  background: linear-gradient(135deg, #07346f, #0a4f9f);
+}
+
+.portal-btn.green {
+  color: #fff;
+  background: linear-gradient(135deg, #137a3f, #1b9955);
+}
+
+.portal-btn.subtle {
+  color: #07346f;
+  background: rgba(255,255,255,.82);
+  border-color: rgba(7, 46, 99, .22);
+  box-shadow: none;
+}
+
+.leader-card {
+  width: min(430px, 100%);
+  justify-self: center;
+  position: relative;
+  border-radius: 22px;
+  background: rgba(255,255,255,.82);
+  border: 1px solid rgba(7, 46, 99, .16);
+  box-shadow: 0 24px 55px rgba(7, 46, 99, .18);
+  padding: 16px;
+}
+
+.leader-card::after {
+  content: "";
+  position: absolute;
+  inset: 18px -18px auto auto;
+  width: 132px;
+  height: 260px;
+  border-right: 4px solid rgba(211, 145, 24, .65);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.leader-photo {
+  height: 286px;
+  border-radius: 18px;
+  background-image: url("/assets/udf-kerala-homepage-hero-concept.png");
+  background-size: 250%;
+  background-position: 72% 37%;
+  background-repeat: no-repeat;
+  background-color: #f8f9fb;
+}
+
+.leader-nameplate {
+  margin: -34px 14px 0;
+  position: relative;
+  border-radius: 16px;
+  background: #fff;
+  padding: 20px 26px;
+  box-shadow: 0 14px 34px rgba(7, 46, 99, .16);
+}
+
+.leader-nameplate h2 {
+  margin: 0 0 6px;
+  color: #07346f;
+  font-size: 30px;
+  line-height: 1.2;
+  letter-spacing: 0;
+}
+
+.leader-nameplate p {
+  margin: 0;
+  color: #17375f;
+  font-weight: 700;
+}
+
+.leader-nameplate p span {
+  display: inline-block;
+  width: 1px;
+  height: 18px;
+  margin: 0 10px -4px;
+  background: #d39118;
+}
+
+.search-dock {
+  position: relative;
+  z-index: 4;
+  margin-top: -48px;
+}
+
+.portal-search {
+  display: grid;
+  grid-template-columns: 36px 1fr auto;
+  align-items: center;
+  gap: 14px;
+  min-height: 70px;
+  border: 1px solid rgba(7, 46, 99, .18);
+  border-radius: 30px;
+  background: rgba(255,255,255,.96);
+  padding: 10px 16px 10px 24px;
+  box-shadow: 0 18px 45px rgba(7, 46, 99, .12);
+}
+
+.portal-search > svg {
+  color: #526987;
+  width: 24px;
+  height: 24px;
+}
+
+.portal-search input {
+  width: 100%;
+  border: 0;
+  outline: 0;
+  color: #334a68;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 600;
+  background: transparent;
+}
+
+.portal-search button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 48px;
+  border: 0;
+  border-left: 1px solid #dfe7f1;
+  padding: 0 16px 0 22px;
+  color: #314a69;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.portal-search button svg {
+  width: 22px;
+  height: 22px;
+}
+
+.metric-strip {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: 32px;
+  border: 1px solid rgba(7, 46, 99, .16);
+  border-radius: 16px;
+  background: rgba(255,255,255,.95);
+  box-shadow: 0 12px 30px rgba(7, 46, 99, .06);
+  overflow: hidden;
+}
+
+.metric-item {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  min-height: 112px;
+  padding: 22px 26px;
+}
+
+.metric-item + .metric-item {
+  border-left: 1px solid #e4ebf4;
+}
+
+.metric-icon {
+  display: grid;
+  width: 62px;
+  height: 62px;
+  place-items: center;
+  border-radius: 999px;
+}
+
+.metric-icon svg {
+  width: 30px;
+  height: 30px;
+}
+
+.metric-icon.blue { color: #07346f; background: #edf4ff; }
+.metric-icon.green { color: #137a3f; background: #eaf7ef; }
+.metric-icon.blue-soft { color: #0a4f9f; background: #edf6ff; }
+.metric-icon.gold { color: #b87912; background: #fff6e5; }
+
+.metric-item small {
+  display: block;
+  color: #4b5e79;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.metric-item strong {
+  display: block;
+  color: #07346f;
+  font-family: Inter, "Noto Sans Malayalam", sans-serif;
+  font-size: 30px;
+  line-height: 1.1;
+  font-weight: 900;
+  letter-spacing: 0;
+}
+
+.metric-item p {
+  margin: 2px 0 0;
+  color: #5d6c82;
+  font-size: 12px;
+  font-weight: 650;
+}
+
+.home-section {
+  margin-top: 34px;
+}
+
+.home-section-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 22px;
+  margin-bottom: 14px;
+}
+
+.home-section-head h2 {
+  margin: 0;
+  color: #07346f;
+  font-size: 30px;
+  line-height: 1.25;
+  letter-spacing: 0;
+}
+
+.home-section-head a {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #0a4f9f;
+  font-size: 13px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+.home-minister-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.home-minister-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 95px 1fr;
+  min-height: 142px;
+  gap: 13px;
+  border: 1px solid #dfe8f3;
+  border-radius: 13px;
+  background: #fff;
+  padding: 14px;
+  box-shadow: 0 14px 35px rgba(7, 46, 99, .05);
+}
+
+.home-minister-photo {
+  border-radius: 9px;
+  background-size: cover;
+  background-position: center top;
+  background-repeat: no-repeat;
+  background-color: #f5f7fb;
+}
+
+.home-minister-copy h3 {
+  margin: 2px 0 5px;
+  color: #10233f;
+  font-size: 15px;
+  line-height: 1.3;
+  letter-spacing: 0;
+}
+
+.minister-party {
+  display: inline-flex;
+  border-radius: 999px;
+  background: #0a4f9f;
+  color: #fff;
+  padding: 4px 9px;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.home-minister-copy p {
+  margin: 9px 0 4px;
+  color: #40526f;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+}
+
+.home-minister-copy small {
+  display: block;
+  color: #566880;
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.card-arrow {
+  position: absolute;
+  right: 16px;
+  bottom: 12px;
+  color: #0a4f9f;
+  font-family: Inter, sans-serif;
+  font-weight: 900;
+}
+
+.round-next {
+  position: absolute;
+  right: -22px;
+  top: 50%;
+  display: grid;
+  width: 43px;
+  height: 43px;
+  place-items: center;
+  border: 1px solid #cfd9e6;
+  border-radius: 999px;
+  transform: translateY(-50%);
+  background: #fff;
+  color: #6a7890;
+  font-family: Inter, sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  box-shadow: 0 12px 30px rgba(7, 46, 99, .08);
+}
+
+.ministry-tile-grid {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 18px;
+}
+
+.home-ministry-tile {
+  min-height: 126px;
+  display: grid;
+  place-items: center;
+  border: 1px solid #e0e8f2;
+  border-radius: 13px;
+  background: #fff;
+  padding: 18px 12px;
+  text-align: center;
+  box-shadow: 0 14px 34px rgba(7, 46, 99, .045);
+}
+
+.home-ministry-tile svg {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 7px;
+}
+
+.home-ministry-tile h3 {
+  margin: 0;
+  color: #10233f;
+  font-size: 16px;
+  letter-spacing: 0;
+}
+
+.home-ministry-tile p {
+  margin: 2px 0 0;
+  color: #65738a;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+}
+
+.home-ministry-tile.green { color: #137a3f; }
+.home-ministry-tile.blue { color: #0a4f9f; }
+.home-ministry-tile.gold { color: #d39118; }
+.home-ministry-tile.violet { color: #7b3aa2; }
+
+.policy-grid {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 18px;
+}
+
+.policy-card {
+  min-height: 144px;
+  border: 1px solid #e0e8f2;
+  border-radius: 13px;
+  background: #fff;
+  padding: 20px;
+  box-shadow: 0 14px 34px rgba(7, 46, 99, .045);
+}
+
+.policy-card h3 {
+  margin: 0 0 9px;
+  color: #10233f;
+  font-size: 17px;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.policy-card p {
+  min-height: 44px;
+  margin: 0 0 12px;
+  color: #647086;
+  font-size: 13px;
+  line-height: 1.65;
+}
+
+.policy-status {
+  display: inline-flex;
+  border-radius: 5px;
+  padding: 5px 9px;
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-size: 11px;
+  font-weight: 800;
+}
+
+.policy-status.green { background: #137a3f; }
+.policy-status.blue { background: #0a4f9f; }
+.policy-status.gold { background: #c88916; }
+
+.policy-card small {
+  display: block;
+  margin-top: 10px;
+  color: #6d7b91;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.issue-finder {
+  position: relative;
+  display: grid;
+  grid-template-columns: 170px 1fr 360px 190px;
+  gap: 24px;
+  align-items: center;
+  min-height: 176px;
+  margin-top: 34px;
+  border: 1px solid #bfd1e8;
+  border-radius: 16px;
+  background:
+    linear-gradient(90deg, rgba(239, 247, 255, .98), rgba(255,255,255,.96)),
+    radial-gradient(circle at right bottom, rgba(10, 79, 159, .16), transparent 20rem);
+  padding: 24px 28px;
+  overflow: hidden;
+}
+
+.issue-illustration {
+  display: grid;
+  width: 142px;
+  height: 142px;
+  place-items: center;
+  border-radius: 999px;
+  color: #0a4f9f;
+  background: rgba(10, 79, 159, .08);
+}
+
+.issue-illustration svg {
+  width: 72px;
+  height: 72px;
+}
+
+.issue-finder h2 {
+  margin: 0 0 8px;
+  color: #07346f;
+  font-size: 26px;
+  letter-spacing: 0;
+}
+
+.issue-finder p {
+  margin: 0;
+  color: #405776;
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.issue-form {
+  display: grid;
+  gap: 10px;
+}
+
+.issue-form label {
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  align-items: center;
+  gap: 8px;
+  min-height: 46px;
+  border: 1px solid #cbd9ea;
+  border-radius: 9px;
+  background: #fff;
+  padding: 0 12px;
+  color: #405776;
+}
+
+.issue-form label svg {
+  width: 20px;
+  height: 20px;
+}
+
+.issue-form select {
+  min-width: 0;
+  border: 0;
+  outline: 0;
+  color: #4f6078;
+  background: transparent;
+  font: inherit;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.issue-submit {
+  width: 100%;
+  min-height: 50px;
+  border-radius: 8px;
+}
+
+.issue-building {
+  display: grid;
+  place-items: center;
+  color: rgba(10, 79, 159, .35);
+}
+
+.issue-building svg {
+  width: 150px;
+  height: 150px;
+}
+
+.timeline-section {
+  margin-bottom: 28px;
+}
+
+.home-timeline {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0;
+  padding: 12px 0 6px;
+}
+
+.timeline-card {
+  position: relative;
+  min-height: 116px;
+  border-top: 2px solid #cbd8ea;
+  padding: 18px 22px 0 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  top: -8px;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #fff;
+  border-radius: 999px;
+  box-shadow: 0 0 0 1px #b9c8dc;
+}
+
+.timeline-card.green .timeline-dot { background: #137a3f; }
+.timeline-card.blue .timeline-dot { background: #0a4f9f; }
+.timeline-card.gold .timeline-dot { background: #d39118; }
+
+.timeline-card small {
+  display: block;
+  color: #65758d;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.timeline-card h3 {
+  margin: 8px 0 8px;
+  color: #17375f;
+  font-size: 14px;
+  line-height: 1.55;
+  letter-spacing: 0;
+}
+
+.timeline-card p {
+  display: inline-flex;
+  margin: 0;
+  border-radius: 999px;
+  padding: 4px 9px;
+  background: #eef7f2;
+  color: #137a3f;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.timeline-card.blue p { background: #eef5ff; color: #0a4f9f; }
+.timeline-card.gold p { background: #fff7e6; color: #b87912; }
+
+.trust-band {
+  margin-top: 20px;
+  background:
+    linear-gradient(90deg, rgba(255, 248, 235, .9), #fff),
+    linear-gradient(160deg, transparent 78%, rgba(19, 138, 75, .92) 78% 82%, rgba(255,255,255,0) 82% 84%, rgba(230, 99, 34, .94) 84%);
+  border-top: 1px solid #eeddbf;
+  padding: 26px 0;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 100px 1fr 1fr;
+  gap: 28px;
+  align-items: center;
+}
+
+.trust-shield {
+  display: grid;
+  width: 82px;
+  height: 82px;
+  place-items: center;
+  border-radius: 999px;
+  color: #07346f;
+  background: #fff;
+  box-shadow: 0 12px 28px rgba(7, 46, 99, .12);
+}
+
+.trust-shield svg {
+  width: 48px;
+  height: 48px;
+}
+
+.trust-grid h2 {
+  margin: 0 0 6px;
+  color: #07346f;
+  font-size: 21px;
+  letter-spacing: 0;
+}
+
+.trust-grid p {
+  margin: 0;
+  color: #43546d;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+.footer {
+  margin-top: 0;
+  padding: 30px 0 20px;
+  color: #dfeeff;
+  border: 0;
+  background: linear-gradient(135deg, #052a58, #07346f);
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr auto;
+  gap: 30px;
+  align-items: center;
+}
+
+.footer .logo-text,
+.footer .logo-text strong {
+  color: #fff !important;
+}
+
+.footer .logo-text small {
+  color: #a9c7ed;
+}
+
+.footer .logo-mark {
+  color: #fff;
+}
+
+.footer-logo {
+  display: inline-flex;
+  width: fit-content;
+  min-width: 0;
+  padding: 8px 12px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 14px 32px rgba(0,0,0,.16);
+}
+
+.footer-logo .site-logo-img {
+  width: 224px;
+}
+
+.footer-copy {
+  max-width: 480px;
+  margin: 14px 0 0;
+  color: #c8dcf4;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px;
+  color: #e7f2ff;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.footer-social {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-social span {
+  display: grid;
+  width: 31px;
+  height: 31px;
+  place-items: center;
+  border-radius: 999px;
+  background: rgba(255,255,255,.1);
+  color: #fff;
+  font-family: Inter, sans-serif;
+  font-weight: 800;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid rgba(255,255,255,.16);
+  color: #b9d2ef;
+  font-size: 12px;
+}
+
+@media (max-width: 1120px) {
+  .nav-links { gap: 18px; }
+  .portal-hero h1 { font-size: 52px; }
+  .metric-strip { grid-template-columns: repeat(2, 1fr); }
+  .metric-item:nth-child(3) { border-left: 0; border-top: 1px solid #e4ebf4; }
+  .metric-item:nth-child(4) { border-top: 1px solid #e4ebf4; }
+  .home-minister-grid,
+  .policy-grid { grid-template-columns: repeat(2, 1fr); }
+  .ministry-tile-grid { grid-template-columns: repeat(3, 1fr); }
+  .issue-finder { grid-template-columns: 120px 1fr 330px; }
+  .issue-building { display: none; }
+}
+
+@media (max-width: 980px) {
+  .nav-inner { height: 78px; }
+  .nav-tools { margin-left: auto; }
+  .portal-hero-grid { grid-template-columns: 1fr; }
+  .leader-card { justify-self: start; }
+  .portal-hero { padding-top: 44px; }
+  .portal-search { grid-template-columns: 32px 1fr; }
+  .portal-search button { grid-column: 1 / -1; border-left: 0; border-top: 1px solid #dfe7f1; justify-content: center; }
+  .issue-finder { grid-template-columns: 1fr; }
+  .issue-illustration { width: 104px; height: 104px; }
+  .home-timeline { grid-template-columns: repeat(2, 1fr); row-gap: 24px; }
+  .trust-grid,
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-links { justify-content: flex-start; }
+  .footer-bottom { flex-direction: column; }
+}
+
+@media (max-width: 620px) {
+  .nav { border-radius: 0; }
+  .logo { min-width: 0; }
+  .site-logo-img { width: 128px; }
+  .footer-logo .site-logo-img { width: 176px; }
+  .logo-mark { width: 48px; height: 48px; }
+  .logo-text { font-size: 18px; }
+  .logo-text strong { font-size: 23px; }
+  .lang-pill:not(.active) { display: none; }
+  .portal-hero h1 { font-size: 38px; }
+  .portal-hero::before { opacity: .23; background-position: 64% top; }
+  .portal-lead { font-size: 15px; }
+  .portal-actions { display: grid; }
+  .leader-card { width: 100%; }
+  .leader-photo { height: 238px; background-size: 290%; }
+  .leader-nameplate h2 { font-size: 24px; }
+  .search-dock { margin-top: -34px; }
+  .metric-strip,
+  .home-minister-grid,
+  .ministry-tile-grid,
+  .policy-grid,
+  .home-timeline { grid-template-columns: 1fr; }
+  .metric-item + .metric-item { border-left: 0; border-top: 1px solid #e4ebf4; }
+  .home-section-head { align-items: flex-start; flex-direction: column; }
+  .round-next { display: none; }
+  .home-minister-card { grid-template-columns: 86px 1fr; }
+  .issue-finder { padding: 20px; }
+  .trust-band { background: #fff8eb; }
+}
