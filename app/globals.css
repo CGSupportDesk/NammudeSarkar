@@ -290,7 +290,7 @@ h1 strong {
   display: flex;
   justify-content: space-between;
   gap: 32px;
-  align-items: end;
+  align-items: flex-end;
   margin-bottom: 28px;
 }
 
